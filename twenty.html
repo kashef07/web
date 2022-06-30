@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxShadow&Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: bisque;
+            /*  syntax: offset x , y color.  box-shadow positive numbers will show the shadow in down */
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow negative numbers will show the shadow in up */
+            /* box-shadow: -10px -13px green; */
+
+            /* The 3rd pixel is used to blur the background in light color if you increase more it will spread */
+            /* positive-down */
+            /* box-shadow: 10px 13px 10px green; */
+            /* negative-down */
+            /* box-shadow: -10px -13px 10px green; */
+
+            /* The 4th pixel is used to spread the color in the background if you increase more it will spread */
+            /* box-shadow: -10px -13px 10px 34px green; */
+            /* the rgba 4th property is alpha it will decide the color to get dark. */
+            /* box-shadow: -10px -13px 10px 34px rgba(6, 216, 216, 0.5); */
+
+            /* if you want to put the boxshadow inside th box use insert property. if u increase offset x px it will horizontally apply the shadow effects if u increase offset y px it will vertically apply the shadow effects */
+            /* box-shadow: inset 3px 5px green; */
+
+        }
+
+        .card h2{
+            text-shadow: 2px 0px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis harum sequi vitae necessitatibus ipsum, minima maiores similique sint facere eveniet! Fugit perferendis nostrum, ducimus mollitia ad unde dignissimos praesentium a?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis harum sequi vitae necessitatibus ipsum, minima maiores similique sint facere eveniet! Fugit perferendis nostrum, ducimus mollitia ad unde dignissimos praesentium a?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis harum sequi vitae necessitatibus ipsum, minima maiores similique sint facere eveniet! Fugit perferendis nostrum, ducimus mollitia ad unde dignissimos praesentium a?</p>
+        </div>
+    </div>
+</body>
+</html>

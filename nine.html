@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        .one{
+            color: black;
+            background-color: antiquewhite;
+            border-radius: 30px;
+            }
+
+            .one ul{
+            overflow: auto;
+            /* margin-left: 40px; */
+            }
+
+            .one li{
+                float: left;
+                list-style: none;
+                margin: 13px 13px;
+            }
+
+            .one li a{ 
+                padding: 10px 25px;
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+            }
+
+            .one li a:hover{
+                background-color: darksalmon;
+            }
+
+            .search{
+                color: black;
+                float: right;
+                padding: 11px 30px;
+                margin: auto;
+            }
+
+            .one input{
+                border: 2px solid black;
+                border-radius: 14px;
+                padding: 2px 50px;
+                width: 130px;
+            }
+
+            h1{
+                text-align: center;
+                text-decoration: none;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+    <h1>Navigation Menu</h1>
+    <header class="one" id="o">
+    <ul>
+        <li><a href="https://www.google.com " target="main">Home</a></li> 
+        <li><a href="">Search</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact Us</a></li>
+        <div class="search">
+            <input type="text" name="Search" placeholder="Search the website"> 
+            <select>
+                <option value="Select options">Select options</option>
+                <option value="Home">Home</option>
+                <option value="Search">Search</option>
+                <option value="About">About</option>
+                <option value="Contact">Contact</option>
+            </select> 
+        </div>
+    </ul>
+</header>
+</body>
+</html>

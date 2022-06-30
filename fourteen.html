@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+            body{
+            background-color: burlywood;
+            }
+
+            h1{
+            text-align: center;
+            color: rgb(10, 10, 10);
+        } 
+
+        /* Initialize the container as a flex box */
+        .container{
+            background-color: rgb(228, 42, 42);
+            border: 2px solid rgb(8, 8, 8);
+            width: 80%;
+            height: 400px;
+            justify-content: center;
+            display: flex; 
+            margin: 4px 136px;
+            
+            /* flex-direction: row;         */
+            /* flex-direction: row-reverse;    */
+            /* flex-direction: column;        */
+            /* flex-direction: column-reverse;   */
+            
+            /* bydefault no flexwrap:- */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            
+            /* ---shorthand property---
+            flex-flow: row-reverse wrap;   (direction + wrap) */
+
+             /* justify-content will justify the content in horizontal direction also use flex direction row , row-reverse to see the effects*/
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+             /* justify-content will justify the content in vertical direction also use flex direction column, column-reverse to see the effects*/
+            /* align-items: center; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+
+            /* To use align item: stretch --->You have to enable flex wrap */
+            /* align-items: stretch; */
+            }
+
+        .item{
+            background-color: rgb(212, 239, 243);
+            border: 2px solid grey;
+            margin: 10px;
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* #item1{
+            order property display which item should come first. whichever order number has higher property it will display
+            order: 3;
+        } */
+
+        /* #item2{
+            flex grow property is used to increase the length of the box
+            flex-grow: 1;
+        } */
+
+        /* #item3{
+            when flex-direction is set to row flex-basis: will control width
+            when flex-direction is set to column flex-basis: will control height
+            flex-basis: 200px; 
+            
+            short hand property of flex:- grow,shrink,fex basis
+            flex: 2 2 120px; 
+            
+            we can set particular item alignment in up,center,down.
+            align-self: center;
+            align-self: flex-start;
+            align-self: flex-end; 
+        }  */
+    </style>
+</head>
+<body>
+    <h1>This is a flexbox</h1>   
+    <div class="container">
+    <div class="item" id="item1">box1</div>
+    <div class="item" id="item2">box2</div>
+    <div class="item" id="item3">box3</div>
+</div>
+</body>
+</html>

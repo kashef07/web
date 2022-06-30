@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to kashef gym</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("/images/gym.jpg");
+            background-repeat: no-repeat;
+            background-size: 1370px;
+        }
+
+        .left{
+        /* border: 2px solid red; */
+        color: whitesmoke;
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        }
+
+        .left img{
+            width: 120px;
+            margin:auto;
+            
+        }
+
+        .left div{
+            text-align: center;
+            line-height: 19px;
+            font-size: 20px;
+
+        }
+
+        .center{
+        /* border: 2px solid green; */
+        color: whitesmoke;
+        display: block;
+        width: 585px;
+        margin: 40px 364px;
+        }
+
+        .navbar{ 
+            display: inline-block;
+        }
+
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a{
+            color:antiquewhite;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: darkgrey;
+        }
+
+        .right{
+        /* border: 2px solid yellow; */
+        position: absolute;
+        color: whitesmoke;
+        display: inline-block;
+        right: 34px;
+        top: 31px;
+        margin: 20px 0px;
+        }
+
+        .btn{
+            margin: 0px 10px;
+            background-color: black;
+            color: whitesmoke;
+            padding: 4px 14px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color:grey;
+        }
+
+        .container{
+            border: 2px solid darkgrey;
+            color:azure;
+            margin: 120px 810px;
+            padding: 65px 157px;
+            width: 170px;
+            height: 115px;
+            border-radius: 10px;
+        }
+
+        .container h1{
+            font-size: 17px;
+            text-transform: uppercase;
+            width: 344px;
+            margin: -8px -27px;
+            padding-bottom: 8px;
+        }
+
+        input{
+            margin: 2px -29px;
+            padding: 2px 28px;
+            border-radius: 10px;
+            /* cursor: pointer; */
+        }
+
+        .but{
+            background-color: black;
+            color: beige;
+            border-radius: 13px;
+            font-size: 16px;
+            margin: 24px 25px;
+            padding: 0px 32px;
+        }
+
+        .but:hover{
+            background-color:grey;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+    <div class="left">
+        <img src="/images/dumbelllogo.jpg" alt="">
+        <div>kashef Gym</div>
+    </div>
+
+    <!-- center box for navbar -->
+    <div class="center">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- right box for buttons -->
+    <div class="right">
+        <button class="btn">Call Us Now</button><button class="btn">Email Us Now</button>
+    </div>
+</header>
+
+<div class="container">
+    <h1>Join the best gym now</h1>
+    <form action="noaction.php">
+        <div class="forms">
+            <input type="text" name="" placeholder="Enter your Name">
+            <input type="text" name="" placeholder="Enter your Age">
+            <input type="text" name="" placeholder="Enter your Mobile/Ph-No">
+            <input type="text" name="" placeholder="Enter your Email Id">
+        </div>
+        
+        <button class="but">Submit</button>
+    </form>
+</div>
+</body>
+</html>

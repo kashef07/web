@@ -1,0 +1,8 @@
+/* external css :- To direct import copy of fonts n have to mention particular id or class to define in CSS rules to specify families. For eg:- sanserif,festive,cursive.
+
+ <link rel="stylesheet" href="<style>
+ <link rel="stylesheet" href="   @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+ </style> "> 
+ p{
+    font-family: 'Festive', cursive;
+} */

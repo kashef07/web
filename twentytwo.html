@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: darkkhaki;
+        }
+
+        .box{
+            background-color: cornsilk;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* to access in keyframe we need to give animation name */
+            animation-name: kashef;
+
+            /* duration  */
+            animation-duration: 2s;
+            /* count */
+            animation-iteration-count: 1;
+            /* animation-iteration-count: infinite; */
+
+            /* animation-fill-mode forwards will ends in the box to-width and stay there */
+            animation-fill-mode: forwards;
+
+            /* animation-timing function ease-in is used to start slow and fast , ease-out opposite of easein , ease-in-out slow-fast-slow */
+            animation-timing-function: ease-in-out;
+
+            /* animation delay */
+            animation-delay: 5s;
+
+                   /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-iteration-count animation-fill-mode animation-timing-function animation-delay ; */
+        /* animation: kashef 5s 1s ease-in backwards 12; */
+        
+        }
+
+        @keyframes kashef {
+            from{
+width: 200px;            
+            }
+            to{
+width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

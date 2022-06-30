@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment - Float & Clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+    <style>
+        *{
+        box-sizing: border-box;
+        }
+
+          body{
+        font-family: 'Roboto', sans-serif;
+    }
+        .container{
+            width: 900px;
+            border:3px solid grey;
+            margin: auto;
+
+        }
+
+        .names{
+            border: 3px solid rgb(0, 0, 0);
+            margin: 12px 3px;
+            padding: 12px 3px; 
+            background: burlywood;
+        }
+
+        #kashef{
+            float: left;
+            width:48%;
+        }
+
+        #kafil{
+            float: right;
+            width: 48%;
+        }
+
+        #kamil{
+            /* float: left; */
+            width: 100%;
+            clear: both;
+        }
+
+        p,h3{
+            /* text-align: left; */
+            /* text-align: right; */
+            text-align: center;
+            /* text-align: justify; */
+        }
+
+        h1{
+        width: 250px;
+        margin: auto;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <h1>welcome names</h1>
+       <div id="kashef"class="names">
+           <h3>kashef</h3>
+           <p id="kashefp" class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui molestias nemo dolorum. Veritatis modi molestias blanditiis! Labore corrupti dignissimos odio, sunt alias autem ipsum, ut provident, perspiciatis eligendi maxime.</p>
+       </div>
+       <div id="kafil"class="names">
+        <h3>kafil</h3>
+        <p id="kafilp" class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui molestias nemo dolorum. Veritatis modi molestias blanditiis! Labore corrupti dignissimos odio, sunt alias autem ipsum, ut provident, perspiciatis eligendi maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium illum dicta consequuntur pariatur debitis? Fuga quam officiis autem beatae!</p>
+    </div>
+    <div id="kamil"class="names">
+        <h3>kamil</h3>
+        <p id="kamilp" class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui molestias nemo dolorum. Veritatis modi molestias blanditiis! Labore corrupti dignissimos odio, sunt alias autem ipsum, ut provident, perspiciatis eligendi maxime.</p>
+    </div>
+
+    <div id="kay"class="names">
+        <h3>kay</h3>
+        <p id="kay" class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui molestias nemo dolorum. Veritatis modi molestias blanditiis! Labore corrupti dignissimos odio, sunt alias autem ipsum, ut provident, perspiciatis eligendi maxime.</p>
+    </div>
+
+   </div> 
+</body>
+</html>
